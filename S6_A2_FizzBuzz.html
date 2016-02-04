@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Assigments/Session6</title>
+			<style>
+				div{
+					width: 20%;
+					border: 5px solid gray;
+					float: left;
+					height: 400px;
+					overflow: auto;
+					text-align: center;
+					background-color: skyBlue;
+					color: navy;
+					font-weight: bold;
+				} 
+				h3 {
+					text-align: center;
+					text-decoration: underline;
+				}
+				.eoa{
+					clear: left;
+				}
+			</style>
+		</head>
+
+		<body>
+			<h4>Assignment 2 of Session 6</h4>
+			<h5>Problem Statement: FizzBuzz</h5>
+			<div id="for">
+				<h3>For Statement</h3>
+				<p id ="list"></p>
+				<script> 
+						var i;
+				for ( i = 1; i <= 100; i++){
+					if (i%3 == 0 && i%5 ==0) {
+						document.getElementById("list").innerHTML += "FizzBuzz" + "<BR>";}
+					else if (i%3 == 0) {
+						document.getElementById("list").innerHTML += "Fizz" + "<BR>";}
+					else if (i%5 == 0) {
+						document.getElementById("list").innerHTML += "Buzz" + "<BR>";}
+					else {
+						document.getElementById("list").innerHTML += i + "<BR>";
+					}
+				}
+				</script>
+			</div>	
+			<div id="switch">
+				<h3>Switch Statement</h3>
+				<p id ="list1"></p>
+				<script>
+						var i;			
+					for (var i = 1; i<=100; i++){
+		        switch(true){
+		           case (i%5==0 && i%3==0):
+		                document.getElementById("list1").innerHTML += "FizzBuzz" + "<BR>";
+		                break; 
+		           case !(i%3):
+		                document.getElementById("list1").innerHTML += "Fizz" + "<BR>";
+		                break;
+		            case !(i%5):
+		                document.getElementById("list1").innerHTML += "Buzz" + "<BR>";
+		                break;
+		            default:
+		                document.getElementById("list1").innerHTML += i + "<BR>";
+		                break;
+		        };
+
+		      };
+				</script>
+			</div>	
+			<p class ="eoa">End of assignment.</p>
+		</body>
+	</html>
+
